@@ -1,6 +1,5 @@
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-// export const Test = styled.div`
-//  display: flex;
-// `;
-//
+export const Container = styled.div`
+  grid-area: content;
+`;

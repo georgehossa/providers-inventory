@@ -1,20 +1,27 @@
 import React from 'react';
-import ApartmentCard from '../ApartmentCard';
+import FloorCards from '../FloorCards';
 import PropTypes from 'prop-types';
-//import { Test } from './Content.styles';
+import { Container } from './Content.styles';
 
 const Content = (props) => (
-  <div className="ContentWrapper">
-    <ApartmentCard/>
-  </div>
+  <Container>
+    <FloorCards/>
+    <FloorCards/>
+    <FloorCards/>
+    <FloorCards/>
+    <FloorCards/>
+    <FloorCards/>
+    <FloorCards/>
+    <FloorCards/>
+    <FloorCards/>
+    <FloorCards/>
+    <FloorCards/>
+    <FloorCards/>
+  </Container>
 );
 
 Content.propTypes = {
-  // bla: PropTypes.string,
-};
-
-Content.defaultProps = {
-  // bla: 'test',
+  props: PropTypes.any,
 };
 
 export default Content;
