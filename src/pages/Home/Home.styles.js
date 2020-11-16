@@ -5,4 +5,5 @@ export const Layout = styled.main`
   grid-template: auto auto / auto 1fr;
   grid-template-areas: "nav header" "nav content";
   color: ${props => props.theme.mainColor};
+  background-color: ${props => props.theme.colorNeutral};
 `;
