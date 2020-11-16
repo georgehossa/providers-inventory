@@ -5,18 +5,9 @@ import { Container } from './Content.styles';
 
 const Content = (props) => (
   <Container>
-    <FloorCards/>
-    <FloorCards/>
-    <FloorCards/>
-    <FloorCards/>
-    <FloorCards/>
-    <FloorCards/>
-    <FloorCards/>
-    <FloorCards/>
-    <FloorCards/>
-    <FloorCards/>
-    <FloorCards/>
-    <FloorCards/>
+    <FloorCards floor={3}/>
+    <FloorCards floor={2}/>
+    <FloorCards floor={1}/>
   </Container>
 );
 
