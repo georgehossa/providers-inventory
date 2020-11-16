@@ -6,9 +6,13 @@ const kerning = '.05rem';
 export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  min-width: 120px;
   background-color: white;
-  border-radius: .4rem;
+  border-radius: ${props => props.theme.borderRadius};
   overflow: hidden;
+  &:not(:first-child) {
+    margin-left: .5rem;
+  }
 `;
 
 export const ApartmentStatus = styled.div`
@@ -16,11 +20,12 @@ export const ApartmentStatus = styled.div`
   background-color: ${props => props.status === 'Disponible' ? props.theme.statusAvailable : props.status === 'Opcionado' ? props.theme.statusOptioned : props.theme.statusSold};
   font-size: .8rem;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: ${kerning};
 `
 
 export const ApartmentId = styled.div`
-  padding: 0 ${xPadding};
+  padding: .5rem ${xPadding} 0;
   font-size: 1.2rem;
 `
 export const ApartmentArea = styled.div`
@@ -33,7 +38,7 @@ export const ApartmentType = styled.div`
   line-height: 1;
   justify-content: center;
   align-items: center;
-  margin: .2rem ${xPadding} 1rem;
+  margin: .5rem ${xPadding} 1rem;
   padding: .1rem 1rem;
   border-radius: 2rem;
   background-color: ${props => props.theme.colorNeutral};
