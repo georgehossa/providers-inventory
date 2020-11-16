@@ -1,13 +1,17 @@
 import React from 'react';
 import FloorCards from '../FloorCards';
+import Filters from '../Filters';
 import PropTypes from 'prop-types';
-import { Container } from './Content.styles';
+import { Container, ContentWrapper } from './Content.styles';
 
 const Content = (props) => (
   <Container>
-    <FloorCards floor={3}/>
-    <FloorCards floor={2}/>
-    <FloorCards floor={1}/>
+    <ContentWrapper>
+      <Filters/>
+      <FloorCards floor={3}/>
+      <FloorCards floor={2}/>
+      <FloorCards floor={1}/>
+    </ContentWrapper>
   </Container>
 );
 
