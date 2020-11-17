@@ -19,7 +19,7 @@ const Home = (props) => {
     <ThemeProvider theme={ theme }>
       <GlobalStyles />
         <Layout>
-          <Menu forwardedRef={menuRef}/>
+          <Menu forwardedRef={menuRef} width={menuWidth}/>
           <Header/>
           <Content/>
         </Layout>
@@ -29,7 +29,7 @@ const Home = (props) => {
 }
 
 Home.propTypes = {
-  // bla: PropTypes.string,
+  props: PropTypes.any,
 };
 
 export default Home;

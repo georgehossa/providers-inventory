@@ -36,7 +36,7 @@ FloorCards.propTypes = {
 };
 
 FloorCards.defaultProps = {
-  floor: 20,
+  floor: 1,
 };
 
 export default FloorCards;

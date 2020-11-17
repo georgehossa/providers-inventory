@@ -24,11 +24,10 @@ const Menu = ({forwardedRef}) => {
 }
 
 Menu.propTypes = {
-  // bla: PropTypes.string,
-};
-
-Menu.defaultProps = {
-  // bla: 'test',
+  refProp: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) })
+])
 };
 
 export default Menu;
