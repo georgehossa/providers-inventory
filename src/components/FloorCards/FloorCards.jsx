@@ -15,6 +15,18 @@ const FloorCards = ({floor}) => (
       <ApartmentCard />
       <ApartmentCard status='Vendido' />
       <ApartmentCard status='Opcionado' />
+      <ApartmentCard />
+      <ApartmentCard status='Vendido' />
+      <ApartmentCard status='Opcionado' />
+      <ApartmentCard />
+      <ApartmentCard status='Vendido' />
+      <ApartmentCard status='Opcionado' />
+      <ApartmentCard />
+      <ApartmentCard status='Vendido' />
+      <ApartmentCard status='Opcionado' />
+      <ApartmentCard />
+      <ApartmentCard status='Vendido' />
+      <ApartmentCard status='Opcionado' />
     </Apartments>
   </Container>
 );
