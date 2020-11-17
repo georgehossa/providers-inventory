@@ -1,6 +1,7 @@
 export const theme = {
   colorBrand: '#3ecfaf',
   colorDefault: '#5c6564',
+  colorSecondary: '#012d26',
   colorDefault_active: '#3948ff',
   colorWarning: '#f8f08e',
   colorNeutral: '#f8f8f8',
