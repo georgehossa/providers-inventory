@@ -9,4 +9,6 @@ export const theme = {
   statusOptioned: '#ffedd5',
   statusSold: '#ffd3d4',
   borderRadius: '.5rem',
+  maxWidth: '85vw',
+  maxWidth_internal: '90%',
 }
