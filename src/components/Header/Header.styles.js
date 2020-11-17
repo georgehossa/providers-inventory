@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   display: block;
+  margin-bottom: 1.5rem;
   background-color: white;
   border-bottom: 2px solid ${props => props.theme.colorNeutral};
 `;
@@ -12,7 +13,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  width: 90vw;
+  width: ${props => props.theme.maxWidth};
   margin: 0 auto;
 `
 const size = '2.5rem';

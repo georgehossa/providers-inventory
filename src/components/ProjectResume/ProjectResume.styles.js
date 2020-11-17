@@ -9,8 +9,8 @@ export const Container = styled.section`
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  width: ${props => props.theme.maxWidth_internal};
   margin: 1.5rem auto;
   font-size: 1rem;
   & *:not(:first-child) {
